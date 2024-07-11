@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:travel_buddy_fix/constant/route_constant.dart';
+import 'package:travel_buddy_fix/screens/login_screen.dart';
 import 'package:travel_buddy_fix/screens/register_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -21,7 +22,6 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-         
             SizedBox(
               width: 300,
               height: 50,
@@ -64,7 +64,11 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        // navigasi ke halaman login
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginScreen()),
+                        );
                       },
                   ),
                 ],

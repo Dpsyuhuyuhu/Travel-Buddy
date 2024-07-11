@@ -139,7 +139,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         Align(
                           alignment: Alignment.center,
                           child: ElevatedButton.icon(
-                            icon: Icon(Icons.login),
                             label: Text('Login'),
                             onPressed: () {
                               if (_formKey.currentState?.validate() ?? false) {

@@ -13,13 +13,6 @@ class AccountScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Row(
           children: [
-            IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.black),
-              onPressed: () {
-                // Kembali ke menu utama atau halaman sebelumnya
-                context.pushNamed(RouteConstant.main);
-              },
-            ),
             SizedBox(width: 10),
             Text(
               "AKUN SAYA",
